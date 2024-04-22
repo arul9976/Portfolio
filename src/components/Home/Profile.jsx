@@ -1,7 +1,6 @@
 import myPic from '../../../images/arul.png'
 import { Image } from '@chakra-ui/react';
 const Profile = () => {
-    console.log('render HomePage');
     return (
         <>
             <div className='relative text-white animate-animate-top z-10 w-full m-[auto] h-full grid place-items-center'>

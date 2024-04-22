@@ -6,6 +6,7 @@ export function ProfileProvider({ children }) {
     const [TogglePro, setTogglePro] = useState(null);
 
     const ToggleBtn = () => setTogglePro(!TogglePro);
+    
     const value = { TogglePro, ToggleBtn };
 
     return (

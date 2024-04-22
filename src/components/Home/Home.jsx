@@ -5,9 +5,6 @@ import { ProfileContext } from '../../utils/Utill_Togg';
 import Social from '../Navbar/Social';
 const Home = () => {
     const { TogglePro, ToggleBtn } = useContext(ProfileContext);
-
-
-    console.log('render Home', TogglePro);
     return (
         <>
             <Social />
