@@ -6,7 +6,7 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { BrowserRouter } from 'react-router-dom'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename='/Portfolio'>
+    <BrowserRouter basename='/Portfolio/'>
       <ChakraProvider>
         <App />
       </ChakraProvider>
