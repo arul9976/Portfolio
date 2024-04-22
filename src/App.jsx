@@ -19,11 +19,11 @@ function App() {
       <div className="text-black max-md:text-white h-full overflow-hidden">
         <Navbar />
         <Routes>
-          <Route path='/' exact element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
-          <Route path='/About' element={<Suspense fallback={<div>Loading...</div>}><About /></Suspense>} />
-          <Route path='/Projects' element={<Suspense fallback={<div>Loading...</div>}><Project /></Suspense>} />
-          <Route path='/Skills' element={<Suspense fallback={<div>Loading...</div>}><Myskill location={location.pathname.substring(1)} /></Suspense>} />
-          <Route path='/Resume' element={<Suspense fallback={<div>Loading...</div>}><Demo location={location.pathname.substring(1)} /></Suspense>} />
+          <Route path='/Portfolio/' exact element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
+          <Route path='/Portfolio/About' element={<Suspense fallback={<div>Loading...</div>}><About /></Suspense>} />
+          <Route path='/Portfolio/Projects' element={<Suspense fallback={<div>Loading...</div>}><Project /></Suspense>} />
+          <Route path='/Portfolio/Skills' element={<Suspense fallback={<div>Loading...</div>}><Myskill location={location.pathname.substring(1)} /></Suspense>} />
+          <Route path='/Portfolio/Resume' element={<Suspense fallback={<div>Loading...</div>}><Demo location={location.pathname.substring(1)} /></Suspense>} />
         </Routes>
       </div>
     </ProfileProvider>
