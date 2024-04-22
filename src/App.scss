@@ -1,0 +1,48 @@
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 100dvh;
+  background: #000;
+}
+
+.bg-conic {
+  position: relative;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bg-conic::after {
+
+  position: absolute;
+  content: '';
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  background: repeating-conic-gradient(from var(--b), var(--clr-1) 0%, var(--clr-1) 5%, transparent 5%, var(--clr-1) 45%, var(--clr-1) 50%);
+  filter: blur(2px);
+  z-index: -1;
+  inset: -4px;
+  border-radius: 10px;
+  animation: animateR 10s linear infinite;
+}
+
+@property --b {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 30deg;
+}
+
+@keyframes animateR {
+  0% {
+    --b: 0deg;
+  }
+
+  100% {
+    --b: 360deg;
+  }
+}

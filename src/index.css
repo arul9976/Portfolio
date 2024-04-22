@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* Custom delay classes */
+    .delay-home {
+      animation-delay: calc(0.2s * var(--de-lay));
+    }
+  
+    .delay-about {
+      animation-delay: 1s;
+    }
+  
+    .delay-social {
+      animation-delay: calc(0.1s * var(--in-dex)) !important;
+    }
+    .text-cs{
+        font-size: calc(12px + 1vw)/* 30px */;
+        line-height: calc(1em + 2vw);
+    }
+    
+
+}
