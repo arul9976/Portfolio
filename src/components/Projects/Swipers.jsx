@@ -7,11 +7,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import './Styles.css';
-import img1 from "../../../images/project_01.png"
-import img2 from "../../../images/project_02.png"
-import img3 from "../../../images/project3.png"
-import img4 from "../../../images/NotesApp.png"
-import img5 from "../../../images/Portfolio.png"
+import img1 from "/images/project_01.png"
+import img2 from "/images/project_02.png"
+import img3 from "/images/project3.png"
+import img4 from "/images/NotesApp.png"
+import img5 from "/images/Portfolio.png"
 
 // import required modules
 import { Mousewheel, Pagination } from 'swiper/modules';

@@ -1,4 +1,4 @@
-import myPic from '../../../images/arul.png'
+import myPic from '/images/arul.png'
 import { Image } from '@chakra-ui/react';
 const Profile = () => {
     return (

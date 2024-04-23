@@ -1,6 +1,6 @@
 import { loadSlim } from '@tsparticles/slim';
 import BgParticles from '../../utils/BgParticles';
-import MyImg2 from "../../../images/arul.png"
+import MyImg2 from "/images/arul.png"
 import Social from '../Navbar/Social';
 const About = () => {
     return (
