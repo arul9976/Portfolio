@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import fvi from "../../../svgs/code.gif"
+import fvi from "/svgs/code.gif"
 import Profile from './Profile';
 import { ProfileContext } from '../../utils/Utill_Togg';
 import Social from '../Navbar/Social';
