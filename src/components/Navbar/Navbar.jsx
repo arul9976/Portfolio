@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import UpperText from '../../utils/UpperText'
 import { ArrowBackIcon } from '@chakra-ui/icons'
 import { ProfileContext } from '../../utils/Utill_Togg'
-
+import './Nav.scss'
 const Navbar = () => {
     const { TogglePro, ToggleBtn } = useContext(ProfileContext)
     const location = useLocation();
@@ -38,11 +38,11 @@ const Navbar = () => {
                             return (
                                 <div key={index}>
                                     {item !== "resume" &&
-                                        <Link to={item !== "resume" && UpperText(item)}>
+                                        <NavLink to={item !== "resume" && UpperText(item)}>
                                             <li style={{ '--pos-X': 'left-2', '--de-lay': index }} className={`md:animate-myAni-slide-top flex justify-center items-center md:delay-home md:transition-all md:duration-500  ${`max-md:fixed ${index === 0 && 'max-md:animate-slide-left max-md:-left-4 max-md:top-28 max-md:-rotate-90'} ${index === 1 && 'max-md:animate-slide-top max-md:right-2 max-md:top-16 '} ${index === 2 && 'max-md:animate-slide-bottom max-md:left-2 max-md:bottom-16 '}`} cursor-pointer mx-2 px-2 py-1 font-semibold hover:border-b-2 hover:border-b-red-400 transition-all duration-100`}>
                                                 {UpperText(item)}
                                             </li>
-                                        </Link>
+                                        </NavLink>
                                     }
                                     {item === "resume" &&
                                         <li style={{ '--pos-X': 'left-2', '--de-lay': index }} className={`md:animate-myAni-slide-top flex justify-center items-center md:delay-home md:transition-all md:duration-500  ${`max-md:fixed ${index === 3 && 'max-md:animate-slide-right max-md:rotate-90 max-md:-right-2 max-md:bottom-28 '}`} cursor-pointer mx-2 px-2 py-1 font-semibold hover:border-b-2 hover:border-b-red-400 transition-all duration-100`}>
