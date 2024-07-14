@@ -20,7 +20,7 @@ const Project1 = ({ Text, Img, linkW, linkG }) => {
         },
         cardBack: {
             width: '100%',
-            height: '260px',
+            height: '200px',
             background: '#000'
         }
     }

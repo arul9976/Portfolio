@@ -12,6 +12,7 @@ import img2 from "/images/project_02.png"
 import img3 from "/images/project3.png"
 import img4 from "/images/NotesApp.png"
 import img5 from "/images/Portfolio.png"
+import img6 from "/images/MemoryGame.png"
 
 // import required modules
 import { Mousewheel, Pagination } from 'swiper/modules';
@@ -43,12 +44,18 @@ export default function Swipers() {
             linkG: 'https://github.com/arul9976/NotesApp',
             linkW: 'https://arul9976.github.io/NotesApp/'
         },
-    {
-        Text: 'This portfolio website is a project that I created during my beginner stage of learning web development using HTML, CSS, and JavaScript. It may not be my latest work, but it showcases my early efforts and progress in this field.',
-        Img: img5,
-        linkG: 'https://github.com/arul9976/My_PortFolio',
-        linkW: 'https://arul9976.github.io/My_PortFolio/'
-    }]
+        {
+            Text: 'This portfolio website is a project that I created during my beginner stage of learning web development using HTML, CSS, and JavaScript. It may not be my latest work, but it showcases my early efforts and progress in this field.',
+            Img: img5,
+            linkG: 'https://github.com/arul9976/My_PortFolio',
+            linkW: 'https://arul9976.github.io/My_PortFolio/'
+        }, {
+            Text: "This is an Memory Game using Vannila Javascript. Test your memory with our fun and challenging memory game! See how many pairs you can match before the time runs out.",
+            Img: img6,
+            linkG: 'https://github.com/arul9976/Memory_Game',
+            linkW: 'https://arul9976.github.io/Memory_Game/'
+        }
+    ]
     return (
         <>
             <Swiper
