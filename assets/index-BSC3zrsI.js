@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/StrokeColorUpdater-BGRLtZ1t.js","assets/BgParticles-DRH0UKc0.js","assets/index-DQR74Eb-.js","assets/index-W-_6wcIe.css"])))=>i.map(i=>d[i]);
-import{_ as n}from"./index-DQR74Eb-.js";async function i(r,t=!0){await r.addParticleUpdater("strokeColor",async o=>{const{StrokeColorUpdater:a}=await n(async()=>{const{StrokeColorUpdater:e}=await import("./StrokeColorUpdater-BGRLtZ1t.js");return{StrokeColorUpdater:e}},__vite__mapDeps([0,1,2,3]));return new a(o)},t)}export{i as loadStrokeColorUpdater};

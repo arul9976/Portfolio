@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/ParallaxMover-CukBWV_O.js","assets/BgParticles-DRH0UKc0.js","assets/index-DQR74Eb-.js","assets/index-W-_6wcIe.css"])))=>i.map(i=>d[i]);
-import{_ as e}from"./index-DQR74Eb-.js";async function n(a,r=!0){await a.addMover("parallax",async()=>{const{ParallaxMover:o}=await e(async()=>{const{ParallaxMover:t}=await import("./ParallaxMover-CukBWV_O.js");return{ParallaxMover:t}},__vite__mapDeps([0,1,2,3]));return new o},r)}export{n as loadParallaxMover};
