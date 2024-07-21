@@ -24,7 +24,7 @@ export default function Swipers() {
             Text: 'The CRUD functionality allows users to seamlessly manage data with Create, Read, Update, and Delete operations. Users can add new entries, view existing data, modify information, and remove items as needed. This functionality is built using Node.js for server-side logic, providing a robust and efficient backend.',
             Img: img1,
             linkG: 'https://github.com/arul9976/Todoapp',
-            linkW: 'https://todoapp-0dpq.onrender.com/Dashboard'
+            linkW: 'https://bit.ly/MyTodoApp'
         },
         {
             Text: 'This full-stack project showcases the power of Node.js for server-side logic, Tailwind css for styling, and JavaScript for dynamic client-side functionality. The integration of these technologies, coupled with effective version control using Git, results in a robust and scalable application.',
@@ -36,7 +36,7 @@ export default function Swipers() {
             Text: 'I created a login page project from scratch that demonstrates my skills in HTML, CSS, and JavaScript. The page is clean, user-friendly, and secure, with features such as password encryption and input validation. I am proud of this project as it showcases my ability to create functional and visually appealing web pages.',
             Img: img3,
             linkG: 'https://github.com/arul9976/Login',
-            linkW: 'https://todoapp-0dpq.onrender.com/Login'
+            linkW: 'https://todoappbackend-10085207710.development.catalystappsail.com/Login'
         },
         {
             Text: 'The CRUD functionality allows users to seamlessly manage data with Create, Read, Update, and Delete operations. Users can add new entries, view existing data, modify information, and remove items as needed. This functionality is built using Java SpringBoot for server-side logic, providing a robust and efficient backend.',
