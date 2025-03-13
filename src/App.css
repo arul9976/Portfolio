@@ -1,7 +1,6 @@
-body{
+body {
   background-color: #000 !important;
 }
-
 
 #root {
   max-width: 1440px;
@@ -26,9 +25,8 @@ body{
 }
 
 .bg-conic::after {
-
   position: absolute;
-  content: '';
+  content: "";
   width: calc(100% + 8px);
   height: calc(100% + 8px);
   background: repeating-conic-gradient(from var(--b), var(--clr-1) 0%, var(--clr-1) 5%, transparent 5%, var(--clr-1) 45%, var(--clr-1) 50%);
@@ -40,17 +38,15 @@ body{
 }
 
 @property --b {
-  syntax: '<angle>';
+  syntax: "<angle>";
   inherits: false;
   initial-value: 30deg;
 }
-
 @keyframes animateR {
   0% {
     --b: 0deg;
   }
-
   100% {
     --b: 360deg;
   }
-}
+}/*# sourceMappingURL=App.css.map */
