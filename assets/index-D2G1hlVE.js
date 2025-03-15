@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Attractor-CllcO_Hd.js","assets/ParticlesInteractorBase-vfDeBun3.js","assets/BgParticles-CD8nKkiv.js","assets/index-C9BsUAVG.js","assets/index-nT3SkDDi.css"])))=>i.map(i=>d[i]);
-import{_ as n}from"./index-C9BsUAVG.js";async function i(t,r=!0){await t.addInteractor("particlesAttract",async a=>{const{Attractor:c}=await n(async()=>{const{Attractor:o}=await import("./Attractor-CllcO_Hd.js");return{Attractor:o}},__vite__mapDeps([0,1,2,3,4]));return new c(a)},r)}export{i as loadParticlesAttractInteraction};
