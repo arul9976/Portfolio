@@ -21,7 +21,7 @@ export default {
         'jose-sans': 'Josefin Sans, sans-serif',
       },
       gridTemplateRows: {
-        'Row_mxmd': '70% 30%',
+        'Row_mxmd': '40% 30%',
       },
       width: {
         'impWidth': '100% !important',
@@ -34,6 +34,7 @@ export default {
         'fontSize-md-h1': 'calc(0.8rem + 1.5vw + .4vh)',
         'fontSize-md': 'calc(0.4rem + 1.5vw + .4vh)',
         'fontSize-sm': 'calc(0.3rem + 1.5vw + .4vh)',
+        'fontSize-x-sm': 'calc(0.1rem + 1.2vw + .2vh)',
         'fontSize-xl': 'calc(0.5rem + 1.5vw + .4vh)',
         'fontSize-lg': 'calc(0.3rem + 1vw + .5vh)',
         'fontSize-lg-mxmd': 'calc(0.4rem + 1.1vw)',
@@ -64,8 +65,24 @@ export default {
         'myAni-slide-top-cs': 'slide-top-cs 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both',
         'line-ani-h': 'line-anime-h 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both',
         'line-ani-w': 'line-anime-w 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both',
+        'fade-in': 'fadeIn 0.5s ease-in forwards',
+        'typing': 'typing 3s steps(25, end) forwards, blink 1s step-end infinite',
+        'typing-delayed': 'typing 3.5s steps(40, end) 1s forwards, blink 0.75s step-end infinite',
+
       },
       keyframes: {
+        typing: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '0%, 100%': { 'border-color': 'transparent' },
+          '50%': { 'border-color': '#f87171' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(10px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
         'spin-reverse': {
           'to': { transform: 'rotate(-360deg)' },
         },

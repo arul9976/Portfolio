@@ -1,23 +1,33 @@
-import myPic from '/images/arul.png'
-import { Image } from '@chakra-ui/react';
+import MyImage from './MyImage';
+
 const Profile = () => {
     return (
         <>
-            <div className='relative text-white animate-animate-top z-10 w-full m-[auto] h-full grid place-items-center'>
+            <div className='relative text-white animate-animate-top z-10 w-full m-[auto] h-full grid place-items-center border-white-900'>
                 <div className={`transition-all animate-myAni max-md:animate-myAni-md grid grid-cols-2 w-4/5 h-0 max-md:grid-cols-1 max-md:grid-rows-2 max-md:h-full max-sm:w-4/5`}>
-                    <div  className="relative font-pt-sans text-black border-y-2 border-l-2 border-black max-md:border-x-2 max-md:border-2 max-md:border-b-0">
+                    <div className="relative font-pt-sans text-black border-y-2 border-l-2 border-black max-md:border-x-2 max-md:border-2 max-md:border-b-0">
                         <div className="translate-x-1/2 -translate-y-1/2 delay-about absolute top-1/2 w-full text-center right-2/4">
                             <p className="text-6xl max-md:text-4xl font-bold ">
                                 Hi,
                             </p>
-                            <p className="text-fontSize-md-h1 max-md:text-2xl font-semibold"> <span>I'm  </span>Arulkumar M.</p>
-                            <p className='text-gray-500 text-fontSize-md max-md:text-fontSize-mxmd'>
-                                A self-motivated, highly skilled, and self-driven aspiring Software Engineer at Zoho with the ability to adapt to any situation and the proven ability to grow oneself and others.
+                            <div className="text-[3.5rem] md:text-[3.0rem] w-max mx-auto flex items-center justify-center font-semibold gap-3">
+                                <span className="flex-1">I'm</span>
+                                <div>
+                                    <p className="h-full flex-2 overflow-hidden whitespace-nowrap border-r-2 border-gray-500 animate-typing animate-blink">
+                                        Arulkumar M.
+                                    </p>
+                                </div>
+                            </div>
+                            <p className='text-gray-500 mt-8 animate-fade-in text-fontSize-x-sm'>
+                                Backend Developer, Excited to learn new technologies and grow in my skills.
                             </p>
+                            {/* <p class="text-gray-500 h-full text-fontSize-md max-w-full overflow-hidden whitespace-nowrap border-r-2 border-gray-500 animate-typing animate-blink">
+                                Backend Developer, Excited to learn new technologies and grow in my skills.
+                            </p> */}
                         </div>
                     </div>
                     <div className="relative grid items-center justify-center text-white border-y-2 border-r-2 border-white max-md:border-x-2 max-md:border-2 max-md:border-t-0">
-                        <Image className='absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-imgWidth-vw transition-all' src={myPic} />
+                        <MyImage />
                     </div>
                 </div>
             </div>

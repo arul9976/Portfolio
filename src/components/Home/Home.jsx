@@ -19,6 +19,9 @@ const Home = () => {
                     <Profile />
                 )
             }
+            {!TogglePro && <div className="fixed bottom-[40%] right-[50%] translate-x-1/2 translate-y-1/2 text-white">
+                <b className='shadowText text-7xl opacity-[.3]'>Click Me</b>
+            </div>}
         </>
     )
 }

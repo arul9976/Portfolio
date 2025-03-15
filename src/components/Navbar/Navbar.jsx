@@ -7,12 +7,13 @@ import './Nav.scss'
 const Navbar = () => {
     const { TogglePro, ToggleBtn } = useContext(ProfileContext)
     const location = useLocation();
-    const navs = ['about', 'projects', 'skills', 'resume']
+    const navs = ['about', 'skills', 'projects']
     const sendMail = () => {
         const emailAddress = "arulkumar0172004@gmail.com"
         const subject = "Hello"
 
-        const HandleMail = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`
+        // const HandleMail = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`
+        const HandleMail = `https://mail.zoho.com/zm/#compose`
         return HandleMail;
     }
     return (
@@ -24,7 +25,7 @@ const Navbar = () => {
                 <div className={`max-md:fixed md:animate-slide-left-n  max-md:top-4 max-md:right-1/2 max-md:translate-x-1/2 z-30 absolute left-1 top-0 mt-1 text-2xl ${TogglePro && 'max-md:hidden'}`}>
                     <Link to={'/'} onClick={TogglePro && ToggleBtn}>
                         <div className="flex flex-row-reverse item-center justify-center gap-2">
-                            <div className='flex items-center'>P<span className='text-red-400 font-semibold'>.F</span>olio</div>
+                            <div className='flex items-center'>Port<span className='text-red-400 font-semibold'>F</span>olio</div>
                             <div className="max-md:fixed max-md:top-12 cursor-pointer bg-red-400 rounded-full p-2 grid place-items-center max-md:right-1/2 max-md:translate-x-1/2">
                                 <ArrowBackIcon />
                             </div>
@@ -60,7 +61,7 @@ const Navbar = () => {
                         })
                     }
                     <div className={`${(location.pathname !== '/' || TogglePro) && 'max-md:hidden'} md:animate-slide-right-n max-md:fixed max-md:top-3/4 max-md:right-1/2 max-md:translate-x-1/2 max-md:translate-y-1/2 grid place-items-center w-28 h-10 rounded-2xl border-2 font-semibold border-red-400 hover:bg-red-400`}>
-                        <a target='_blank' href={sendMail()}>Say Hii</a>
+                        <a target='_blank' href={sendMail()}>Say Hello</a>
                     </div>
                 </div>
 
