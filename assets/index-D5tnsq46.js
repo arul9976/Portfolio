@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/OutOfCanvasUpdater-BYHALUQV.js","assets/BgParticles-BAPIvjxO.js","assets/index-D804uFBD.js","assets/index-Dztwv4wv.css"])))=>i.map(i=>d[i]);
+import{_ as n}from"./index-D804uFBD.js";async function s(t,a=!0){await t.addParticleUpdater("outModes",async r=>{const{OutOfCanvasUpdater:e}=await n(async()=>{const{OutOfCanvasUpdater:o}=await import("./OutOfCanvasUpdater-BYHALUQV.js");return{OutOfCanvasUpdater:o}},__vite__mapDeps([0,1,2,3]));return new e(r)},a)}export{s as loadOutModesUpdater};
