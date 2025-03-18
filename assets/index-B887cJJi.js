@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/OpacityUpdater-BE-Cfm25.js","assets/BgParticles-CWv274bC.js","assets/index-CTjT22er.js","assets/index-a6Bp1Ktm.css"])))=>i.map(i=>d[i]);
+import{_ as c}from"./index-CTjT22er.js";async function p(t,a=!0){await t.addParticleUpdater("opacity",async r=>{const{OpacityUpdater:e}=await c(async()=>{const{OpacityUpdater:i}=await import("./OpacityUpdater-BE-Cfm25.js");return{OpacityUpdater:i}},__vite__mapDeps([0,1,2,3]));return new e(r)},a)}export{p as loadOpacityUpdater};
