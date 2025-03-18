@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/CircleDrawer-DVBnWvYh.js","assets/BgParticles-CE4H3pPu.js","assets/index-BWWjxbml.js","assets/index-a6Bp1Ktm.css"])))=>i.map(i=>d[i]);
+import{_ as i}from"./index-BWWjxbml.js";async function o(r,a=!0){const{CircleDrawer:e}=await i(async()=>{const{CircleDrawer:t}=await import("./CircleDrawer-DVBnWvYh.js");return{CircleDrawer:t}},__vite__mapDeps([0,1,2,3]));await r.addShape("circle",new e,a)}export{o as loadCircleShape};
