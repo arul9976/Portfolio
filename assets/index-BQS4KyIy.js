@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/StarDrawer-EKn1GEj5.js","assets/BgParticles-CWv274bC.js","assets/index-CTjT22er.js","assets/index-a6Bp1Ktm.css"])))=>i.map(i=>d[i]);
-import{_ as o}from"./index-CTjT22er.js";async function n(a,r=!0){const{StarDrawer:t}=await o(async()=>{const{StarDrawer:e}=await import("./StarDrawer-EKn1GEj5.js");return{StarDrawer:e}},__vite__mapDeps([0,1,2,3]));await a.addShape("star",new t,r)}export{n as loadStarShape};
