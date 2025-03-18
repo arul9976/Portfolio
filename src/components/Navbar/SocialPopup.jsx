@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 
+import zMail from "/images/zMail.png";
 const SocialPopup = ({ isOpen, setIsOpen, iUrl }) => {
 
 
@@ -12,7 +13,7 @@ const SocialPopup = ({ isOpen, setIsOpen, iUrl }) => {
       // color: 'hover:bg-red-400/20'
     },
     {
-      url: 'https://play-lh.googleusercontent.com/9AjFvEP6RP6zRd41Z9cuiyHe_qD47a1AN0QrvW9Ec0OfsmG9x-t09nmTQMAmmZuYrdso',
+      url: zMail,
       label: 'arulkumar.m@zohocorp.com',
       // color: 'hover:bg-blue-400/20'
     }
@@ -44,10 +45,10 @@ const SocialPopup = ({ isOpen, setIsOpen, iUrl }) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-15 h-15 rounded-full 
-                  flex items-center justify-center text-white shadow-lg 
+                  flex items-center justify-center text-white shadow-lg max-md:w-[50px]
                   hover:scale-110 transform transition-all duration-300 border-2 border-[#00cba9] hover:border-red-400"
       >
-        <img className='rounded-full' src={iUrl} alt="" />
+        <img className='rounded-full w-full' src={iUrl} alt="" />
       </button>
 
       <div 
@@ -64,7 +65,7 @@ const SocialPopup = ({ isOpen, setIsOpen, iUrl }) => {
               ${isOpen ? 'scale-100' : 'scale-0'}`}
             style={{ transitionDelay: `${index * 50}ms` }}
           >
-            <img src={social.url} className='bg-red-100 w-6' alt="" />
+            <img src={social.url} className='bg-red-100 w-6 h-6' alt="" />
             <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
               {social.label}
             </span>

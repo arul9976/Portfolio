@@ -62,7 +62,7 @@ const Project1 = ({ Text, Img, linkW, linkG }) => {
 
     return (
         <motion.div
-            className="grid w-full max-w-[600px] p-4 gap-4 h-[500px] m-auto"
+            className="grid w-full max-w-[600px] p-4 gap-4 h-[700px] min-h-[400px] m-auto"
             variants={cardVariants}
             initial="hidden"
             animate="visible"
@@ -90,7 +90,7 @@ const Project1 = ({ Text, Img, linkW, linkG }) => {
                         <img
                             style={{
                                 width: '100%',
-                                height: '400px',
+                                // height: '400px',
                                 objectFit: 'cover',
                                 transition: 'transform 0.3s ease'
                             }}

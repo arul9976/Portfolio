@@ -7,7 +7,7 @@ import './Nav.scss'
 const Navbar = () => {
     const { TogglePro, ToggleBtn } = useContext(ProfileContext)
     const location = useLocation();
-    const navs = ['about', 'skills', 'projects']
+    const navs = ['about', 'skills', 'projects', 'MyInfo']
     const sendMail = () => {
         const emailAddress = "arulkumar0172004@gmail.com"
         const subject = "Hello"
@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <div key={index}>
                                     {item !== "resume" &&
                                         <NavLink to={item !== "resume" && UpperText(item)}>
-                                            <li style={{ '--pos-X': 'left-2', '--de-lay': index }} className={`md:animate-myAni-slide-top flex justify-center items-center md:delay-home md:transition-all md:duration-500  ${`max-md:fixed ${index === 0 && 'max-md:animate-slide-left max-md:-left-4 max-md:top-28 max-md:-rotate-90'} ${index === 1 && 'max-md:animate-slide-top max-md:right-2 max-md:top-16 '} ${index === 2 && 'max-md:animate-slide-bottom max-md:left-2 max-md:bottom-16 '}`} cursor-pointer mx-2 px-2 py-1 font-semibold hover:border-b-2 hover:border-b-red-400 transition-all duration-100`}>
+                                            <li style={{ '--pos-X': 'left-2', '--de-lay': index }} className={`md:animate-myAni-slide-top flex justify-center items-center md:delay-home md:transition-all md:duration-500  ${`max-md:fixed ${index === 0 && 'max-md:animate-slide-left max-md:-left-4 max-md:top-28 max-md:-rotate-90'} ${index === 1 && 'max-md:animate-slide-top max-md:right-2 max-md:top-16 '} ${index === 2 && 'max-md:animate-slide-bottom max-md:left-2 max-md:bottom-36 '}`} cursor-pointer mx-2 px-2 py-1 font-semibold hover:border-b-2 hover:border-b-red-400 transition-all duration-100`}>
                                                 {UpperText(item)}
                                             </li>
                                         </NavLink>
@@ -60,9 +60,9 @@ const Navbar = () => {
                             )
                         })
                     }
-                    <div className={`${(location.pathname !== '/' || TogglePro) && 'max-md:hidden'} md:animate-slide-right-n max-md:fixed max-md:top-3/4 max-md:right-1/2 max-md:translate-x-1/2 max-md:translate-y-1/2 grid place-items-center w-28 h-10 rounded-2xl border-2 font-semibold border-red-400 hover:bg-red-400`}>
+                    {/* <div className={`${(location.pathname !== '/' || TogglePro) && 'max-md:hidden'} md:animate-slide-right-n max-md:fixed max-md:top-3/4 max-md:right-1/2 max-md:translate-x-1/2 max-md:translate-y-1/2 grid place-items-center w-28 h-10 rounded-2xl border-2 font-semibold border-red-400 hover:bg-red-400`}>
                         <a target='_blank' href={sendMail()}>Say Hello</a>
-                    </div>
+                    </div> */}
                 </div>
 
 

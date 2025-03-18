@@ -37,6 +37,19 @@ const Project = () => {
                     )}
                 </button>
 
+                <button
+                    onClick={() => setStream('Scratch')}
+                    className={`relative px-6 py-3 rounded-full font-medium text-sm transition-all duration-300
+            ${stream === 'Scratch'
+                            ? 'bg-gradient-to-r from-red-500 to-orange-500 text-white shadow-lg'
+                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                >
+                    Scratch Projects
+                    {stream === 'Scratch' && (
+                        <span className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-ping" />
+                    )}
+                </button>
+
             </div>
 
         </div>

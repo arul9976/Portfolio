@@ -18,17 +18,17 @@ const Social = () => {
     ]
 
     return (
-        <div className={`max-mini:transition-all max-mini:duration-100 ${TogglePro ? 'max-mini:w-[310px]' : 'max-mini:w-[300px]'} max-mini:pl-8 max-mini:right-0 w-min max-mini:h-[13%] h-4/6 pt-6 text-white z-[25] absolute bottom-0 right-4 `}>
-            <div className="mini:after:animate-line-ani-h max-mini:after:animate-line-ani-w max-mini:after:right-0 mini:after:bottom-20 mini:h-4/5 mini:justify-center flex mini:flex-col gap-5 relative  after:absolute after:content-[''] after:max-mini:w-[400px] after:max-mini:h-1.5 after:w-1.5 after:h-[500px] after:bg-[#00cba9] after:right-1/2 after:bottom-1/2 after:translate-x-1/2 after:translate-y-1/2">
+        <div className={`max-mini:transition-all max-mini:duration-100 ${TogglePro ? 'max-mini:w-[310px]' : 'max-mini:w-[300px]'} max-mini:pl-8 max-mini:right-0 w-min max-mini:h-[13%] h-4/6 pt-6 text-white z-[1025] absolute bottom-0 right-4 max-md:left-0`}>
+            <div className={`mini:after:animate-line-ani-h flex-row-reverse mini:after:-bottom-5 px-10 mini:h-2/5 mini:justify-center flex mini:flex-col gap-5 relative  after:absolute after:content-[''] after:max-mini:w-[260px] after:max-mini:h-1.5 after:w-1 after:h-[500px] after:bg-[#00cba9] after:right-1/2 after:bottom-1/2 after:translate-x-1/2 after:translate-y-1/2`}>
 
                 {svgs.map((item, index) => {
                     if (index == 0) {
                         return <SocialPopup isOpen={isOpen} setIsOpen={setIsOpen} iUrl={item} />
                     }
                     return (
-                        <a key={index} style={{ '--in-dex': index }} target='_blank' href={urls[index]} className='delay-social cursor-pointer overflow-hidden hover:bg-[#00cba9] hover:border-red-400  mini:animate-animate-opc-1 max-sm:animate-animate-opc-2 z-30 w-svgWidth-vw border-2 border-[#00cba9] bg-red-500 p-2 rounded-full'>
+                        <a key={index} style={{ '--in-dex': index }} target='_blank' href={urls[index]} className='delay-social cursor-pointer overflow-hidden hover:bg-[#00cba9] hover:border-red-400  mini:animate-animate-opc-1 max-sm:animate-animate-opc-2 z-30 w-svgWidth-vw border-2 border-[#00cba9] p-2 rounded-full'>
                             <img src={item} className='shadow-lg 
-                  hover:scale-[1.8] transform transition-all duration-300 scale-[1.5]' alt="" />
+                  hover:scale-[1.8] transform transition-all duration-300 w-full h-full scale-[1.6]' alt="" />
                         </a>
                     )
                 })}

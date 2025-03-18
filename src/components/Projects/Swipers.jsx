@@ -11,12 +11,17 @@ import img1 from "/images/project_01.png"
 import img2 from "/images/project_02.png"
 import img3 from "/images/project3.png"
 import img4 from "/images/NotesApp.png"
-import img5 from "/images/Portfolio.png"
+import img5 from "/images/PortfolioOld.png"
 import img6 from "/images/MemoryGame.png"
+import SimpleMusicPlayer from "/images/SimpleMusicPlayer.png"
+import RockPaperScissor from "/images/RockPaperScissor.png"
+
 import wordMazeImg from "/images/wordmaze.png"
 import zTL from "/images/zTL.png"
 import hashMapImg from "/images/hashMapImg.jpg"
 import CodeFusionImg from "/images/CodeFusion1.png"
+import SuperMario from "/images/SuperMario.png"
+import Spiral from "/images/Spiral.png"
 
 // import required modules
 import { Mousewheel, Pagination } from 'swiper/modules';
@@ -29,17 +34,19 @@ export default function Swipers({ stream, setStream }) {
     {
         "Server": [
             {
+                Text: 'A real-time web code editor with Docker-based isolation spaces, providing secure coding environments for each user. It features integrated chat functionality for collaboration, leveraging Docker containers to ensure dependency isolation and scalability.',
+                Img: CodeFusionImg,
+                linkG: 'https://github.com/arul9976/CodeFusion/tree/team',
+                // linkW: 'https://bit.ly/MyTodoApp'
+            },
+
+            {
                 Text: 'A custom HashMap in Java is a user-defined key-value store with a hash function',
                 Img: hashMapImg,
                 linkG: 'https://github.com/arul9976/CustomHashMap',
                 // linkW: 'https://bit.ly/MyTodoApp'
             },
-            {
-                Text: 'A real-time web code editor with Docker-based isolation spaces, providing secure coding environments for each user. It features integrated chat functionality for collaboration, leveraging Docker containers to ensure dependency isolation and scalability.',
-                Img: CodeFusionImg,
-                linkG: 'https://github.com/arul9976/CodeFusion/tree/team',
-                linkW: 'https://bit.ly/MyTodoApp'
-            },
+
             {
                 Text: 'The to-do app uses CRUD to let users manage tasks with Create, Read, Update, and Delete. It’s built with Node.js',
                 Img: img1,
@@ -66,12 +73,45 @@ export default function Swipers({ stream, setStream }) {
                 linkW: 'https://arul9976.github.io/WordMaze/'
 
             },
+            // {
+            //     Text: "This is an Memory Game using Vannila Javascript. Test your memory with our fun and challenging memory game! See how many pairs you can match before the time runs out.",
+            //     Img: img6,
+            //     linkG: 'https://github.com/arul9976/Memory_Game',
+            //     linkW: 'https://arul9976.github.io/Memory_Game/'
+            // },
             {
-                Text: "This is an Memory Game using Vannila Javascript. Test your memory with our fun and challenging memory game! See how many pairs you can match before the time runs out.",
-                Img: img6,
-                linkG: 'https://github.com/arul9976/Memory_Game',
-                linkW: 'https://arul9976.github.io/Memory_Game/'
-            }
+                Text: "This is an Simple Music Player using Vannila Javascript.",
+                Img: SimpleMusicPlayer,
+                linkG: 'https://github.com/arul9976/SimpleMusicPlayer',
+                linkW: 'https://arul9976.github.io/SimpleMusicPlayer/'
+            },
+            {
+                Text: "This is a custom- built Rock, Paper, Scissors game, designed using vanilla JavaScript",
+                Img: RockPaperScissor,
+                linkG: 'https://github.com/arul9976/RockPaperScissor',
+                linkW: 'https://arul9976.github.io/RockPaperScissor/'
+            },
+            {
+                Text: 'This portfolio website is a project that I created during my beginner stage of learning web development using HTML, CSS, and JavaScript.',
+                Img: img5,
+                linkG: 'https://github.com/arul9976/My_PortFolio',
+                linkW: 'https://arul9976.github.io/My_PortFolio/'
+            },
+        ],
+
+        "Scratch": [
+            {
+                Text: "This is an Super Mario Game Which I Made using Scratch Visual Programming Language On ZS early classes.",
+                Img: SuperMario,
+                linkW: 'https://scratch.mit.edu/projects/1040246369'
+
+            },
+            {
+                Text: "This is an Spiral Pattern Program",
+                Img: Spiral,
+                linkW: 'https://scratch.mit.edu/projects/1038054554'
+
+            },
         ]
     }
 
@@ -105,13 +145,19 @@ export default function Swipers({ stream, setStream }) {
         <>
             <Swiper
                 direction={'horizontal'}
-                slidesPerView={2}
-                spaceBetween={30}
+                slidesPerView={1}
+                spaceBetween={10}
                 mousewheel={true}
                 pagination={{
                     clickable: true,
                 }}
                 modules={[Mousewheel, Pagination]}
+                breakpoints={{
+                    700: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                }}
                 className="mySwiper flex flex-row"
             >
                 {

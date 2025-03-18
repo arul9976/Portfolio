@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import { ProfileProvider } from './utils/Utill_Togg.jsx';
 import { Suspense, lazy } from 'react';
 import Loading from './utils/Loading.jsx';
+import MyInfo from './Contact/MyInfo.jsx';
 
 const Home = lazy(() => import('./components/Home/Home.jsx'));
 const About = lazy(() => import('./components/About/About.jsx'));
@@ -21,6 +22,7 @@ function App() {
           <Route path='/About' element={<Suspense fallback={<Loading />}><About /></Suspense>} />
           <Route path='/Projects' element={<Suspense fallback={<Loading />}><Project /></Suspense>} />
           <Route path='/Skills' element={<Suspense fallback={<Loading />}><Myskill location={location.pathname.substring(1)} /></Suspense>} />
+          <Route path='/MyInfo' element={<Suspense fallback={<Loading />}><MyInfo /></Suspense>} />
         </Routes>
       </div>
     </ProfileProvider>
