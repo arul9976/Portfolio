@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/SizeUpdater-ii2Or38T.js","assets/BgParticles-DypjzV_R.js","assets/index-B2oug03_.js","assets/index-Dztwv4wv.css"])))=>i.map(i=>d[i]);
-import{_ as i}from"./index-B2oug03_.js";async function o(t,a=!0){await t.addParticleUpdater("size",async()=>{const{SizeUpdater:e}=await i(async()=>{const{SizeUpdater:r}=await import("./SizeUpdater-ii2Or38T.js");return{SizeUpdater:r}},__vite__mapDeps([0,1,2,3]));return new e},a)}export{o as loadSizeUpdater};
