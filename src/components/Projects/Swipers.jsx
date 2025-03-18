@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -23,7 +21,6 @@ import CodeFusionImg from "/images/CodeFusion1.png"
 import SuperMario from "/images/SuperMario.png"
 import Spiral from "/images/Spiral.png"
 
-// import required modules
 import { Mousewheel, Pagination } from 'swiper/modules';
 import FlipCart from './FlipCart';
 
