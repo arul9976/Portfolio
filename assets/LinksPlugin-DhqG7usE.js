@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/LinkInstance-99efBodw.js","assets/BgParticles-ByTgxFAQ.js","assets/index-DcjaFaFH.js","assets/index-Cmiq0jE0.css","assets/CanvasUtils-Ds6bETn1.js"])))=>i.map(i=>d[i]);
+import{_ as r}from"./index-DcjaFaFH.js";class a{constructor(){this.id="links"}async getPlugin(n){const{LinkInstance:t}=await r(async()=>{const{LinkInstance:i}=await import("./LinkInstance-99efBodw.js");return{LinkInstance:i}},__vite__mapDeps([0,1,2,3,4]));return new t(n)}loadOptions(){}needsPlugin(){return!0}}export{a as LinksPlugin};
